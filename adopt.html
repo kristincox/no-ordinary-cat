@@ -20,7 +20,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <script src="app.js"></script>
-    <script src="dist/js/petfinderAPI4everybody.js"></script>
+    <!-- <script src="dist/js/petfinderAPI4everybody.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="handlebars.js"></script>
+  	<script src="https://rawgit.com/arsood/handlejs/master/handle.js"></script>
 
   </head>
   <body>
@@ -55,9 +59,65 @@
       <div class="jumbotron">
         <h1>Find your own special friend!</h1>
         <!-- <p>...</p> -->
-        <div class="input-group">
-          <span class="input-group-addon" id="sizing-addon2"></span>
-          <input id="location" type="text" class="form-control" placeholder="Zip Code, City or State" aria-describedby="sizing-addon2">
+        <!-- <div class="input-group">
+          <!-- <span class="input-group-addon" id="sizing-addon2">Location</span> -->
+
+          <!-- <input id="location" type="text" class="form-control" placeholder="Zip Code, City or State" aria-describedby="sizing-addon2">
+
+          <!-- <span class="input-group-addon" id="sizing-addon2">Animal</span> -->
+
+          <!-- <input id="animal" type="text" class="form-control" placeholder="Cats or Dogs" aria-describedby="sizing-addon2"> -->
+          <!-- <span class="input-group-addon" id="sizing-addon2">Size</span> -->
+
+          <!-- <input id="size" type="text" class="form-control" placeholder="Small, Medium, Large" aria-describedby="sizing-addon2"> -->
+          <!-- <span class="input-group-addon" id="sizing-addon2">Age</span> -->
+
+          <!-- <input id="age" type="text" class="form-control" placeholder="Baby, Young, Adult, Senior" aria-describedby="sizing-addon2"> --> 
+
+          <div data-petfinder="main">
+            <p><a class="btn btn-primary btn-lg" href="#" role="button" id="pet-search-button">Search</a>
+
+            </div>
+
+            <div id="pet-card-container"></div>
+
+<!--Pet Cards-->
+<script id="pet-template" type="text/x-handlebars-template">
+<div class="pet-card border-radius margin-top-20">
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="{{Media}}" class="img-responsive pet-image" />
+		</div>
+		<div class="col-sm-8">
+			<h3 style="margin-top:0;">{{Name}}</h3>
+
+			<div class="row margin-top-20">
+				<div class="col-sm-4">
+					<strong>Sex: </strong>{{Sex}}
+				</div>
+				<div class="col-sm-4">
+					<strong>Age: </strong>{{Age}}
+				</div>
+				<div class="col-sm-4">
+					<strong>Breed: </strong>{{Breed}}
+				</div>
+			</div>
+
+			<div class="row margin-top-20">
+				<div class="col-sm-12">
+					<strong>Description: </strong>{{Description}}
+				</div>
+			</div>
+      <div class="row margin-top-20">
+				<div class="col-sm-12">
+					<strong>Contact: </strong>{{Contact}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</script>
+<!--/Movie Cards-->
           <!--Animal-->
             <!-- <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -101,15 +161,12 @@
           <li><a href="#">Separated link</a></li> -->
         <!-- </ul>
       </div> -->
-      <div data-petfinder="main">
-        <p><a class="btn btn-primary btn-lg" href="#" role="button" id="pet-search-button">Search for Cats</a>
-          <a href="http://awos.petfinder.com/shelters/AA11.html">View our adoptable pets on Petfinder.</a>
-        </div>
+
       </div>
 
       </div>
     </div>
-    <footer>
+    <!-- <footer>
       <script>
     petfinderAPI4everybody.init({
         key: '123456789', // Your API key with Petfinder
@@ -131,6 +188,6 @@
         }
     });
 </script>
-    </footer>
+    </footer> -->
   </body>
 </html>

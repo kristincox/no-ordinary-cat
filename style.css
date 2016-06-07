@@ -90,6 +90,13 @@ header .header-content {
     border:#CCCCCC 1px solid;
   }
 
+  .article-image-right {
+      float:right;
+      margin:10px;
+      padding:3px;
+      border:#CCCCCC 1px solid;
+    }
+
 p {
   margin-left:25%;
   margin-right:25%;
