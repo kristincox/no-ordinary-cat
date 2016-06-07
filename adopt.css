@@ -1,5 +1,5 @@
-body {
-  background-color:#8eead5;
+#pet-card-container {
+  background-color: #bff6ea;
 }
 
 button {
@@ -9,4 +9,8 @@ button {
 
 .btn-primary {
   margin-top:5%;
+}
+
+h3 {
+  padding-top:5%;
 }
