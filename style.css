@@ -38,6 +38,7 @@ header .header-content {
   width: 100%;
   padding: 50px 15px;
   text-align: center;
+  padding-bottom:20%;
 }
 
 .img-circle {
@@ -71,13 +72,20 @@ header .header-content {
 
 .bg-primary {
   background-color:#3bdbf2;
+
 }
 .bg-primary-warrior {
   background-color:#f7f93b;
+  color:white;
 
 }
 .bg-primary-drinks {
   background-color:#f194f6;
+  color:white;
+}
+
+.img-speights {
+  margin-top:25%;
 }
 
 .article-image {
